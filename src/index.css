@@ -1,13 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100vh;
+  background: #F9F9F9 !important;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.shadowli {
+  border-radius: 5px;
+  border: 1px solid #DCDCDC;
+  height: 80px;
+  color: #000;
+  transition: 0.2s;
+  display: grid;
+  align-items: center;
+}
+.shadowli:hover {
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 10px 10px 25px -8px rgba(0, 0, 0, 0.30);
+  border: none;
+}
+.active {
+  border-radius: 5px;
+  background: #FFF !important;
+  box-shadow: 10px 10px 25px -8px rgba(0, 0, 0, 0.30);
+  border: none;
+}
+.main-page {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.edit-profile {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: .5rem;
+  margin-right: 50px;
+  padding: 15px;
+}
+.card-profile {
+  max-width: 470px;
+  height: auto;
+  background-color: white;
+  border-radius: .5rem;
+  padding: 25px;
+  margin-left: 50px;
+}
+.cardelem {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.secondelem {
+  top: 0;
+  position: absolute;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  padding: 30px;
+  width: 100%;
+}
+.secondelem .card_number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  top: 30px;
+}
+.secondelem .card_number p {
+  margin: 1.5px 0;
+  font-size: 24px;
+}
+.secondelem .card_number section span {
+  margin: 0 10px;
+}
+.secondelem .card_number section .bank {
+  text-transform: uppercase;
+}
+.sidebar {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.21);
+  backdrop-filter: blur(7.5px);
+}
+.dashboard--text {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 24.18px;
+  font-weight: 600;
+}
+hr {
+  background: #D4D4D4 !important;
+  height: 1px !important;
+  border: 1px #D4D4D4 solid !important;
+}
+.nav--text span {
+  color: #000;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.search--input {
+  display: flex;
+  align-items: center;
+}
+.search--input label {
+  border-radius: 5px;
+  border: 1.5px solid #D9D9D9;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search--input input {
+  border-radius: 5px;
+  border: 1.5px solid #D9D9D9;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: rgb(82, 82, 82);
+  font-weight: 600;
+  padding: 10px 20px;
+  height: 45px;
+  margin: 0 5px;
+  background: none;
+}
+.view-money--text {
+  color: #064061;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+.label--input-edit {
+  border-radius: 12px !important;
+  background: #FAFAFA !important;
+  padding: 20px !important;
+  border: none !important;
+  color: #AAA;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+.label--input-edit:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+.input-edit {
+  color: #064061;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+}
+.input-edit-error {
+  color: #f00;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+}
+.input-validation {
+  border-radius: 12px !important;
+  background: #FAFAFA !important;
+  box-shadow: 0px 0px 20px 0px rgba(255, 0, 0, 0.25) !important;
+  padding: 20px !important;
+  color: #AAA;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  border: none !important;
+}
+.button-active {
+  border-radius: 12px !important;
+  border: none !important;
+  padding: 13px 0px !important;
+  background: #4EB7F2 !important;
+  font-family: Montserrat !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+.navbar--text--card--edit--profil {
+  color: #064061;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+.old-user-info {
+  margin: 30px 0;
+}
+.old--user--info {
+  color: #064061;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+}
+.old-user-profil-crd {
+  border-radius: 8px;
+  width: 315px;
+  padding: 12px;
+  background: #FAFAFA;
+}
+.old-user-profil-crd h6 {
+  color: #064061;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+}
+.old-user-profil-crd p {
+  color: #AAA;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+}
+.old-user--content {
+  top: 10px;
 }

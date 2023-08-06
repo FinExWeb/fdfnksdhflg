@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;500&display=swap');
+
+.result_money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.result_money .result_money_col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    background: #FAFAFA;
+    padding: 12px;
+    width: 388px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+}
+
+.result_money .result_money_col section h5 {
+    color: #064061;
+    font-weight: 600;
+}
+
+.result_money .result_money_col section h5,
+h6 {
+    font-size: 16px;
+}
+
+.result_money .result_money_col section h6 {
+    color: #AAA;
+    font-weight: 400;
+}
+
+.result_money .result_money_col h4 {
+    color: #F3735E;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+}
